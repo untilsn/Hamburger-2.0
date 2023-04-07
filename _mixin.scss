@@ -1,0 +1,41 @@
+@mixin mainButton {
+  padding: 12px 20px;
+  font-weight: 550;
+  background-color: transparent;
+  color: $white;
+  border: 2px dashed $white;
+  margin-top: 20px;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $orage-yeloow;
+    border: 2px dashed $white;
+    color: $white;
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+@mixin containerHeading {
+  font-size: 45px;
+  color: $white;
+  text-align: center;
+}
+
+@mixin containerParaphrase {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 20px;
+  color: #f0eeed;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin containerImage {
+  width: 160px;
+  height: 60px;
+  margin: 100px auto 0;
+}

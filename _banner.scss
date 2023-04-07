@@ -1,0 +1,47 @@
+.banner {
+  &-slider {
+    .img {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 100px;
+    }
+
+    .second {
+      justify-content: flex-end;
+    }
+
+    .content {
+      color: $white;
+      padding: 10px;
+      border: 2px;
+      max-width: 550px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+
+      span {
+        font-size: 30px;
+      }
+
+      h1 {
+        color: #0e8388;
+        font-size: 45px;
+        margin-top: 20px;
+      }
+
+      p {
+        line-height: 1.8;
+        margin-top: 20px;
+      }
+
+      .btn {
+        @include mainButton();
+
+        &:hover {
+          background-color: $blue;
+        }
+      }
+    }
+  }
+}

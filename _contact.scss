@@ -1,0 +1,85 @@
+.contact {
+  img {
+    @include containerImage();
+    margin-top: 154px;
+  }
+  h1 {
+    @include containerHeading();
+  }
+  .box {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    .map {
+      flex: 1;
+    }
+    .content {
+      flex: 1;
+      h1 {
+        font-size: 20px;
+      }
+      .input {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 10px;
+        input {
+          margin-top: 20px;
+          outline: none;
+          border: none;
+          padding: 20px;
+          border-bottom: 0.8px solid $white;
+          height: 60px;
+          font-size: 16px;
+          color: $white;
+          background-color: rgba(
+            0,
+            0,
+            0,
+            0.4
+          ); /* Black w/opacity/see-through */
+          &::placeholder {
+            color: $white;
+          }
+        }
+        button {
+          @include mainButton();
+          max-width: 154px;
+        }
+        .text {
+          height: 120px;
+        }
+      }
+      .list {
+        margin-top: 40px;
+        display: flex;
+        gap: 20px;
+        .item {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          text-align: center;
+          i {
+            border: 2px solid $yellow;
+            font-size: 20px;
+            color: $yellow;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          p {
+            font-size: 14px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

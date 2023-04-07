@@ -1,0 +1,55 @@
+.about {
+  img {
+    @include containerImage();
+  }
+  h1 {
+    @include containerHeading();
+  }
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    margin-top: 40px;
+    &-img {
+      img {
+        width: 550px;
+        height: 550px;
+        object-fit: cover;
+        margin-top: 0;
+      }
+    }
+    &-content {
+      margin-bottom: 36px;
+      h1 {
+        font-size: 25px;
+        text-align: start;
+      }
+      p {
+        @include containerParaphrase();
+      }
+      .list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
+        .item {
+          display: flex;
+          gap: 10px;
+          margin-top: 16px;
+          p {
+            margin-top: 0;
+            font-style: normal;
+            font-weight: 550;
+          }
+          i {
+            font-size: 20px;
+            color: $yellow;
+          }
+        }
+      }
+      button {
+        @include mainButton();
+        margin-top: 32px;
+      }
+    }
+  }
+}
