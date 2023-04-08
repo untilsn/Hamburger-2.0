@@ -21,6 +21,7 @@ video {
 html {
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -50,6 +51,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
+  overflow-x: hidden;
   background-color: #181823;
 }
 
@@ -125,6 +127,7 @@ body {
   justify-content: flex-end;
 }
 .banner-slider .content {
+  overflow-x: hidden;
   color: #fff;
   padding: 10px;
   border: 2px;
@@ -385,6 +388,9 @@ body {
   align-items: center;
   margin-top: 40px;
 }
+.about .box-img {
+  overflow-x: hidden;
+}
 .about .box-img img {
   width: 550px;
   height: 550px;
@@ -392,6 +398,7 @@ body {
   margin-top: 0;
 }
 .about .box-content {
+  overflow-x: hidden;
   margin-bottom: 36px;
 }
 .about .box-content h1 {
@@ -647,6 +654,7 @@ body {
   margin-top: 50px;
 }
 .blog-box .item {
+  overflow-x: hidden;
   color: #fff;
   position: relative;
   transition: all 0.2s ease-in-out;

@@ -8,6 +8,7 @@
   &-box {
     margin-top: 50px;
     .item {
+      overflow-x: hidden;
       color: $white;
       position: relative;
       transition: all 0.2s ease-in-out;

@@ -11,6 +11,7 @@
     align-items: center;
     margin-top: 40px;
     &-img {
+      overflow-x: hidden;
       img {
         width: 550px;
         height: 550px;
@@ -19,6 +20,7 @@
       }
     }
     &-content {
+      overflow-x: hidden;
       margin-bottom: 36px;
       h1 {
         font-size: 25px;

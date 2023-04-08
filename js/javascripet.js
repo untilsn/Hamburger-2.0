@@ -45,11 +45,11 @@ var swiper = new Swiper(".review-slider", {
     grabCursor:true,
     spaceBetween: 50,
     loop: true,
-    autoplay: {
-      loop: true,
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   loop: true,
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       0: {
         slidesPerView: 1,
